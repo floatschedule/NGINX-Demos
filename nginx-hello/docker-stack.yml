@@ -6,7 +6,7 @@ networks:
 
 services:
   nginx-hello:
-    image: floatapp/nginx-hello:${CF_SHORT_REVISION}
+    image: floatapp/nginx-hello:master
     networks:
       - float-network
     ports:
