@@ -8,5 +8,7 @@ networks:
 services:
   nginx-hello:
     image: floatapp/nginx-hello:latest
+    networks:
+      - float-network
     ports:
       - "8080:80"
